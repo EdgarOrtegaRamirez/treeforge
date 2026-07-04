@@ -1,5 +1,5 @@
 # Binaries
-treeforge
+/treeforge
 *.exe
 *.exe~
 *.dll
