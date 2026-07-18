@@ -9,8 +9,8 @@ import (
 
 // Scanner walks a directory tree and builds FileNode structures
 type Scanner struct {
-	config  ScannerConfig
-	stats   TreeStats
+	config    ScannerConfig
+	stats     TreeStats
 	fileCount int
 }
 

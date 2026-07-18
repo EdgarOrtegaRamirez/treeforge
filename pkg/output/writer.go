@@ -11,22 +11,22 @@ import (
 
 // Format constants
 const (
-	FormatTree   = "tree"
-	FormatJSON   = "json"
+	FormatTree    = "tree"
+	FormatJSON    = "json"
 	FormatCompact = "compact"
-	FormatList   = "list"
+	FormatList    = "list"
 )
 
 // Writer writes the tree output
 type Writer struct {
-	writer       io.Writer
-	showSizes    bool
-	showPerms    bool
-	showModTime  bool
+	writer        io.Writer
+	showSizes     bool
+	showPerms     bool
+	showModTime   bool
 	showGitStatus bool
-	totalSize    int64
-	totalFiles   int
-	totalDirs    int
+	totalSize     int64
+	totalFiles    int
+	totalDirs     int
 }
 
 // NewWriter creates a new output writer

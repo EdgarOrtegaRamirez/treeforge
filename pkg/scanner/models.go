@@ -31,23 +31,23 @@ type FileNode struct {
 	Children     []*FileNode
 	GitStatus    GitStatus
 	Depth        int
-	NumChildren  int // for directories: total file count
+	NumChildren  int   // for directories: total file count
 	TotalSize    int64 // for directories: total size
 }
 
 // TreeStats holds summary statistics
 type TreeStats struct {
-	TotalFiles    int
-	TotalDirs     int
-	TotalSize     int64
-	LargestFile   string
-	LargestSize   int64
-	OldestFile    string
-	OldestTime    time.Time
-	NewestFile    string
-	NewestTime    time.Time
-	ByExtension   map[string]int
-	ByGitStatus   map[GitStatus]int
+	TotalFiles  int
+	TotalDirs   int
+	TotalSize   int64
+	LargestFile string
+	LargestSize int64
+	OldestFile  string
+	OldestTime  time.Time
+	NewestFile  string
+	NewestTime  time.Time
+	ByExtension map[string]int
+	ByGitStatus map[GitStatus]int
 }
 
 // ScannerConfig holds configuration for the scanner
